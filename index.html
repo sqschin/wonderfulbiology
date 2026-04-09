@@ -1238,6 +1238,31 @@
       border-color: var(--accent);
     }
 
+    .catalog-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .catalog-about {
+      display: inline-block;
+      background: rgba(100,150,200,0.1);
+      color: #a8bdd0;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid rgba(100,150,200,0.2);
+    }
+
+    .catalog-about:hover {
+      background: rgba(100,150,200,0.2);
+      border-color: #a8bdd0;
+      color: #fff;
+    }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 768px) {
       .hero-content { grid-template-columns: 1fr; gap: 40px; }
@@ -1687,7 +1712,10 @@
                   <span class="tag">appetite suppressant</span>
                   <span class="tag">gym</span>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=85261098449&text=Hello%2C%20I%20am%20interested%20in%20Semaglutide.%20Please%20send%20your%20best%20discount%20price." class="catalog-cta">Get Discount Price →</a>
+                <div class="catalog-buttons">
+                  <a href="semaglutide.html" class="catalog-about">About it →</a>
+                  <a href="https://api.whatsapp.com/send?phone=85261098449&text=Hello%2C%20I%20am%20interested%20in%20Semaglutide.%20Please%20send%20your%20best%20discount%20price." class="catalog-cta">Get Discount Price →</a>
+                </div>
               </div>
             </div>
 
